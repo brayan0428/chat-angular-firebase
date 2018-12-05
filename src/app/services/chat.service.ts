@@ -46,7 +46,7 @@ export class ChatService {
     return this.itemsCollection.add(mensaje);
   }
 
-  login(proveedor:string) {
+  login() {
     this.afAuth.auth.signInWithPopup(new auth.GoogleAuthProvider());
   }
 

@@ -11,7 +11,7 @@ export class ChatComponent implements OnInit {
   chats:any[] = [];
   elemento:any;
 
-  constructor(private chatService:ChatService) {
+  constructor(public chatService:ChatService) {
     this.chatService.cargarMensajes().subscribe(() => {
       setTimeout(() => {
         this.elemento.scrollTop = this.elemento.scrollHeight;

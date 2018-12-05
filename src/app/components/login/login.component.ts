@@ -14,7 +14,7 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
   }
 
-  ingresar(termino:string){
-    this.chatService.login(termino);
+  ingresar(){
+    this.chatService.login();
   }
 }
